@@ -1,0 +1,229 @@
+{
+  "name": "HUSH BELOW! original GBA asset pack",
+  "revision": 1,
+  "screen": [
+    240,
+    160
+  ],
+  "bpp": 4,
+  "palette": [
+    [
+      3,
+      8,
+      16
+    ],
+    [
+      5,
+      13,
+      26
+    ],
+    [
+      12,
+      28,
+      43
+    ],
+    [
+      25,
+      48,
+      62
+    ],
+    [
+      53,
+      201,
+      205
+    ],
+    [
+      144,
+      239,
+      226
+    ],
+    [
+      246,
+      232,
+      184
+    ],
+    [
+      239,
+      181,
+      45
+    ],
+    [
+      235,
+      70,
+      59
+    ],
+    [
+      96,
+      173,
+      112
+    ],
+    [
+      61,
+      108,
+      164
+    ],
+    [
+      117,
+      82,
+      148
+    ],
+    [
+      91,
+      111,
+      119
+    ],
+    [
+      237,
+      246,
+      228
+    ],
+    [
+      41,
+      101,
+      87
+    ],
+    [
+      161,
+      78,
+      53
+    ]
+  ],
+  "transparent_index": 0,
+  "assets": [
+    {
+      "name": "cave_tiles",
+      "size": [
+        128,
+        32
+      ],
+      "frame_size": [
+        8,
+        8
+      ],
+      "frames": 64,
+      "tiles": 64,
+      "bytes_4bpp": 2048,
+      "notes": "64 modular abyss, rock, vent, wreck, and luminous tiles."
+    },
+    {
+      "name": "submarine",
+      "size": [
+        64,
+        64
+      ],
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 16,
+      "tiles": 64,
+      "bytes_4bpp": 2048,
+      "notes": "Four directions with thrust, coast, ping, and brake silhouettes."
+    },
+    {
+      "name": "creatures",
+      "size": [
+        64,
+        32
+      ],
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 8,
+      "tiles": 32,
+      "bytes_4bpp": 1024,
+      "notes": "Four hunter shapes with two alert states."
+    },
+    {
+      "name": "specimens",
+      "size": [
+        64,
+        16
+      ],
+      "frame_size": [
+        16,
+        16
+      ],
+      "frames": 4,
+      "tiles": 16,
+      "bytes_4bpp": 512,
+      "notes": "Four recoverable luminous research specimens."
+    },
+    {
+      "name": "sonar_ring",
+      "size": [
+        128,
+        32
+      ],
+      "frame_size": [
+        32,
+        32
+      ],
+      "frames": 4,
+      "tiles": 64,
+      "bytes_4bpp": 2048,
+      "notes": "Four expanding sonar pulse frames."
+    },
+    {
+      "name": "bubbles",
+      "size": [
+        64,
+        8
+      ],
+      "frame_size": [
+        8,
+        8
+      ],
+      "frames": 8,
+      "tiles": 8,
+      "bytes_4bpp": 256,
+      "notes": "Eight bubble and engine-wash particles."
+    },
+    {
+      "name": "font",
+      "size": [
+        128,
+        24
+      ],
+      "frame_size": [
+        8,
+        8
+      ],
+      "frames": 48,
+      "tiles": 48,
+      "bytes_4bpp": 1536,
+      "notes": "48 HUD glyphs in order: ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$%:!-></ "
+    },
+    {
+      "name": "wordmark",
+      "size": [
+        96,
+        32
+      ],
+      "frame_size": [
+        8,
+        8
+      ],
+      "frames": 48,
+      "tiles": 48,
+      "bytes_4bpp": 1536,
+      "notes": "HUSH BELOW! title wordmark."
+    },
+    {
+      "name": "icons",
+      "size": [
+        64,
+        8
+      ],
+      "frame_size": [
+        8,
+        8
+      ],
+      "frames": 8,
+      "tiles": 8,
+      "bytes_4bpp": 256,
+      "notes": "Oxygen, specimen, sonar, warning, and dive-log icons."
+    }
+  ]
+}

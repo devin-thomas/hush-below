@@ -1,0 +1,10 @@
+build/
+__pycache__/
+*.pyc
+*.elf
+*.gba
+*.sav
+validation/
+!site/downloads/hush-below.gba
+!site/assets/screens/*.png
+.DS_Store

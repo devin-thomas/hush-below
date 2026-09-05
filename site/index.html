@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#030810">
+  <meta name="description" content="HUSH BELOW!, an original sonar-stealth game for Game Boy Advance.">
+  <title>HUSH BELOW! — Every ping has a price</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <a class="brand" href="#top" aria-label="HUSH BELOW! home"><span>HB</span><b>03</b></a>
+    <nav aria-label="Page navigation">
+      <a href="#signal">The signal</a>
+      <a href="#dives">Three dives</a>
+      <a href="#controls">Controls</a>
+    </nav>
+    <a class="rom-link" href="downloads/hush-below.gba" download>Get ROM <span>↓</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="depth-scale" aria-hidden="true"><span>000 M</span><span>125 M</span><span>250 M</span><span>375 M</span></div>
+      <div class="hero-copy">
+        <p class="eyebrow">Original Game Boy Advance game · Dive log 03</p>
+        <h1><span>HUSH</span><em>BELOW!</em></h1>
+        <p class="lede">The cave is blind until you call into it. Every answer tells the hunters exactly where to look.</p>
+        <div class="actions">
+          <a class="button primary" href="downloads/hush-below.gba" download>Download the finished ROM</a>
+          <a class="button ghost" href="#signal">Hear the rule</a>
+        </div>
+        <dl class="spec-strip">
+          <div><dt>Campaign</dt><dd>3 complete dives</dd></div>
+          <div><dt>Native</dt><dd>240 × 160</dd></div>
+          <div><dt>Format</dt><dd>GBA / HSHB</dd></div>
+        </dl>
+      </div>
+
+      <figure class="hero-art">
+        <div class="radar" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="screen-shell">
+          <div class="screen-label"><span>ACTIVE SONAR</span><span>ABYSSAL BAND</span></div>
+          <img id="hero-capture" src="assets/screens/04-sonar-ping.png" width="240" height="160" alt="Native GBA gameplay: a cyan sonar ring expands from a yellow research submarine and reveals cave terrain, specimens, and hunting creatures.">
+        </div>
+        <figcaption>Native mGBA framebuffer · shown at 4× · nearest-neighbor</figcaption>
+      </figure>
+    </section>
+
+    <section class="signal" id="signal" aria-labelledby="signal-title">
+      <div class="signal-copy">
+        <p class="section-tag">01 · THE SIGNAL</p>
+        <h2 id="signal-title">Knowledge travels<br><span>both ways.</span></h2>
+        <p>Coast through almost-black water and preserve your location—or press A. The pulse reveals rock, living samples, and the things between you and the buoy. At that same instant, every hunter turns toward the origin.</p>
+        <button id="ping-toggle" class="ping-toggle" type="button" aria-controls="compare-capture" aria-pressed="true">
+          <span class="ping-dot" aria-hidden="true"></span>
+          <span class="toggle-copy"><b>Sonar active</b><small>Press to kill the signal</small></span>
+        </button>
+      </div>
+      <figure class="comparison">
+        <p class="scope-label"><span id="comparison-state">PING / REVEALED</span><span>FRAME 04</span></p>
+        <img id="compare-capture" src="assets/screens/04-sonar-ping.png" width="240" height="160" data-ping="assets/screens/04-sonar-ping.png" data-silent="assets/screens/03-silent-water.png" alt="Sonar-active native GBA gameplay with a bright circular pulse revealing the cave.">
+        <figcaption>The image is an actual emulator capture. Toggle the signal to compare the same dive in silence.</figcaption>
+      </figure>
+    </section>
+
+    <section class="dives" id="dives" aria-labelledby="dives-title">
+      <header>
+        <p class="section-tag">02 · DESCENT RECORD</p>
+        <h2 id="dives-title">Three dives.<br>One reply.</h2>
+      </header>
+      <ol>
+        <li>
+          <span class="dive-number">I</span>
+          <div><h3>The Shelf</h3><p>Recover three luminous specimens. Learn how far a safe pulse really carries.</p></div>
+          <b>125 M</b>
+        </li>
+        <li>
+          <span class="dive-number">II</span>
+          <div><h3>The Wreck</h3><p>Trace three signal shards through tighter stone and restless water.</p></div>
+          <b>250 M</b>
+        </li>
+        <li>
+          <span class="dive-number">III</span>
+          <div><h3>The Abyss</h3><p>Wake a lost transmitter, return to the buoy, and listen to what wakes below it.</p></div>
+          <b>375 M</b>
+        </li>
+      </ol>
+    </section>
+
+    <section class="evidence" aria-label="Campaign evidence">
+      <figure>
+        <div class="capture-frame"><img src="assets/screens/02-dive-brief.png" width="240" height="160" alt="Dive One briefing screen explaining that sonar reveals the cave and also wakes hunters."></div>
+        <figcaption><span>01</span> Read the water</figcaption>
+      </figure>
+      <figure>
+        <div class="capture-frame"><img src="assets/screens/06-dive-log.png" width="240" height="160" alt="Dive Log screen recording specimens, sonar pings, collisions, and remaining oxygen."></div>
+        <figcaption><span>02</span> Count the cost</figcaption>
+      </figure>
+      <figure>
+        <div class="capture-frame"><img src="assets/screens/08-ending.png" width="240" height="160" alt="HUSH BELOW! ending screen stating that something far below pinged back."></div>
+        <figcaption><span>03</span> Receive the answer</figcaption>
+      </figure>
+    </section>
+
+    <section class="controls" id="controls">
+      <div class="control-copy">
+        <p class="section-tag">03 · PILOT CARD</p>
+        <h2>No weapons.<br><span>Only judgment.</span></h2>
+        <p>Free Dive removes the campaign clock. It does not make the water safer.</p>
+      </div>
+      <dl>
+        <div><dt>D-PAD</dt><dd><b>Thrust</b><span>Move through four-directional cave passages.</span></dd></div>
+        <div><dt>A</dt><dd><b>Ping</b><span>Reveal the cave and give every hunter a target.</span></dd></div>
+        <div><dt>B</dt><dd><b>Brake</b><span>Kill the engines and make precise one-pixel moves.</span></dd></div>
+        <div><dt>SELECT</dt><dd><b>Dive log</b><span>Inspect specimens, pings, impacts, and oxygen.</span></dd></div>
+        <div><dt>START</dt><dd><b>Pause</b><span>Hold the dive in perfect silence.</span></dd></div>
+      </dl>
+    </section>
+
+    <section class="surface">
+      <figure><img src="assets/screens/01-title.png" width="240" height="160" alt="HUSH BELOW! title screen with Story Dive, Free Dive, and Sonar Manual options."></figure>
+      <div>
+        <p class="section-tag">SURFACE TRANSMISSION</p>
+        <h2>The finished dive fits in your pocket.</h2>
+        <p>A complete original campaign, Free Dive, deterministic 4bpp art, native PSG audio, dive reports, and an ending—built within real Game Boy Advance constraints.</p>
+        <a class="button primary" href="downloads/hush-below.gba" download>Take HUSH BELOW! down</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><b>HUSH BELOW!</b> · Original game and asset pack</p>
+    <p>ROM, ARM ELF, host simulation, and native mGBA framebuffer verified</p>
+  </footer>
+</body>
+</html>
